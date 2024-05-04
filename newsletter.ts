@@ -13,7 +13,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-let version = 0;
+let version = '0';
 const transporter = createTransport({
   service: "gmail",
   auth: {
@@ -23,8 +23,8 @@ const transporter = createTransport({
 });
 
 rl.question('Version de la newsletter : ', (input) => {
-  version = parseFloat(input);
-  if (!isNaN(version)) {
+  version = input;
+  if (version) {
     console.log(`Version : ${version}`);
     sendNewsletter();
     rl.close();
