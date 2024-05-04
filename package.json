@@ -1,0 +1,25 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "newsletter.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "newsletter":"tsc && node dist/newsletter.js",
+    "newsletter:test":"tsc && node dist/newsletter.js fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/falqlp/newsletter.git"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "@types/nodemailer": "^6.4.14"
+  },
+  "dependencies": {
+    "mongodb": "^6.5.0",
+    "nodemailer": "^6.9.13",
+    "dotenv": "^16.4.5"
+  },
+  "private": true
+}
