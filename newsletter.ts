@@ -73,7 +73,7 @@ function sendNewsletter() {
         let content = fs.readFileSync(
             path.join(
                 __dirname.replace("\\dist", ""),
-                `templates/${version}/newsletter#${version}_${process.argv[2]}.html`,
+                `templates/${version}/newsletter#${version}_${user.lang}.html`,
             ),
             "utf-8",
         );

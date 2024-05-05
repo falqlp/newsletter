@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "newsletter":"tsc && node dist/newsletter.js",
-    "newsletter:test":"tsc && node dist/newsletter.js fr"
+    "newsletter:test":"tsc && node dist/newsletter.js fr-FR"
   },
   "repository": {
     "type": "git",
